@@ -3,9 +3,12 @@
     padding: 0;
     margin: 0;
 }
+
 body{
-background-color: bisque;
+    background-color: bisque;
 }
+
+/* NAVBAR */
 .container{
     display: flex;
     justify-content: space-around;
@@ -13,11 +16,13 @@ background-color: bisque;
     padding: 15px 0;
     background-color: white;
 }
+
 .second-child-item a{
     color: black;
     text-decoration: none;
     letter-spacing: 1px;
 }
+
 .first-child img,
 .third-child-profilepic img{
     width: 100px;
@@ -28,7 +33,7 @@ background-color: bisque;
 .second-child-item ul{
     display: flex;
     gap: 20px;
-    background-color: orang;
+    background-color: white; /* fixed */
 }
 
 .second-child-item ul li{
@@ -38,8 +43,10 @@ background-color: bisque;
 .second-child-item ul li:hover{
     cursor: pointer;
     color: orange;
+    transition: 0.3s;
 }
 
+/* BANNER */
 .banner{
     display: flex;
     justify-content: center;
@@ -49,50 +56,72 @@ background-color: bisque;
     width: 80vw;
     height: auto;
 }
+
+/* PRODUCTS */
 .Product-section{
     width: 85vw;
     margin: 0 auto;
 }
+
 .Product-section h1{
     text-align: center;
     margin: 25px 0px;
 }
+
 .Products{
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
+
+/* CARDS */
+.cards{
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cards:hover{
+    transform: translateY(-5px);
+}
+
 .cards img{
     width: 200px;
     height: 200px;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
+
 .cards h2{
     font-weight: 400;
     margin: 7px 0;
 }
+
 .cards p{
     font-weight: 200;
     letter-spacing: 1px;
 }
+
+/* BUTTON */
 .cards button{
     background-color: black;
     border-radius: 10px;
-    margin: auto;
-    padding: 0%;
+    padding: 8px 12px;   /* fixed */
     color: white;
-    width: 80px;
-    height: 20px;
+    width: auto;
+    height: auto;
     cursor: pointer;
-    
 }
+
 .cards button:hover{
     transform: translateY(-5px);
     transition: 0.5s;
     background-color: orange;
     color: white;
 }
+
+/* FOOTER */
 .footer{
     display: flex;
     justify-content: space-around;
@@ -101,7 +130,23 @@ background-color: bisque;
     padding: 40px 0;
     align-items: center;
 }
+
+.footer ul{
+    list-style: none;
+}
+
 .footer li{
     padding: 7px 0;
+}
 
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Products{
+        justify-content: center;
+    }
 }

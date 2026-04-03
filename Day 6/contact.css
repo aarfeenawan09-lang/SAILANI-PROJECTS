@@ -1,0 +1,116 @@
+/* CONTACT SECTION */
+.contact{
+    width: 85vw;
+    margin: 50px auto;
+    position: relative;
+}
+
+.contact h1{
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* BACK BUTTON */
+.back-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background-color: orange;
+    transform: translateX(-5px);
+}
+
+/* CONTAINER */
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info p{
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* FORM */
+.contact form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+.contact input,
+.contact textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    border-color: orange;
+}
+
+/* BUTTON */
+.contact button{
+    width: 120px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover{
+    background-color: orange;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .back-link{
+        position: static;
+        display: block;
+        margin-bottom: 10px;
+    }
+}

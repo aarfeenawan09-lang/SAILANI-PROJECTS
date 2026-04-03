@@ -1,109 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Store</title>
-    <link rel="stylesheet" href="../Day 6/6.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
-<body>
-    <nav>
-        <div class="container">
+<!-- Put this in <head>, not inside section -->
+<link rel="stylesheet" href="./contact.css">
 
-            <div class="first-child">
-                <img src="../Day 6/images/8c2b123f-d24e-44d0-8604-297b686a1526_PK-1976-688.jpg_2200x2200q80.jpg" alt="Logo">
-            </div>
+<section class="contact">
 
-            <div class="second-child-item">
-                <ul>
-                    <a href="../Day 6/about.html"><li>Home</li></a>
-                    <a href="../Day 6/about.html"><li>About Us</li></a>
-                    <a href="../Day 6/contact.html"><li>Contact Us</li></a>
-                </ul>
-            </div>
+    <!-- Back Button -->
+    <a href="6.html" class="back-link">
+        <button class="back-btn">⬅ Back to Home</button>
+    </a>
 
-            <div class="third-child-profilepic">
-                <img src="../Day 6/images/5f5b3a29b8409d49cc7a4852b317a383.jpg_400x400q80.jpg" alt="Profile">
-            </div>
+    <h1>Contact Us</h1>
 
-        </div>
-    </nav>
+    <div class="contact-container">
 
-    <!-- BANNER -->
-    <section class="banner">
-        <img src="../Day 6/images/5f5b3a29b8409d49cc7a4852b317a383.jpg_400x400q80.jpg" alt="Banner">
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="Product-section">
-        <h1>Products</h1>
-
-        <div class="Products">
-
-            <div class="cards">
-                <img src="../Day 6/images/036a39f27627962ea739dd4c415ad3f0.jpg_400x400q80.jpg" alt="Slipper">
-                <h2>Slipper</h2>
-                <p>Price : $25</p>
-                <button>Buy Now</button>
-            </div>
-
-            <div class="cards">
-                <img src="../Day 6/images/Sebffdc39d3e245d0ab7bb8fd2c9e36df0.jpg_400x400q80.jpg" alt="Dumbbells">
-                <h2>Dumbbells</h2>
-                <p>Price : $50</p>
-                <button>Buy Now</button>
-            </div>
-
-            <div class="cards">
-                <img src="../Day 6/images/e95799d308e6fd53ea29abf18c0ab903.jpg_400x400q80 (1).jpg" alt="Laptop Bag">
-                <h2>Laptop Bag</h2>
-                <p>Price : $30</p>
-                <button>Buy Now</button>
-            </div>
-
-            <div class="cards">
-                <img src="../Day 6/images/6c900123f2319871d800f4de3bccb86c.jpg_400x400q80.jpg" alt="Ring">
-                <h2>Ring</h2>
-                <p>Price : $5</p>
-                <button>Buy Now</button>
-            </div>
-
-            <div class="cards">
-                <img src="../Day 6/images/1e30253d068d0c5e4a9c2fc2b28478d4.png_400x400q80 (1).png" alt="Shirt">
-                <h2>Shirt</h2>
-                <p>Price : $30</p>
-                <button>Buy Now</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-first-child">
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-            </ul>
+        <div class="contact-info">
+            <p><strong>Email:</strong> mystore@gmail.com</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Address:</strong> Rawalpindi, Pakistan</p>
         </div>
 
-        <div class="footer-second-child">
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-            </ul>
-        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
 
-        <div class="third-child">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
+    </div>
 
-    </footer>
-
-</body>
-</html>
+</section>
